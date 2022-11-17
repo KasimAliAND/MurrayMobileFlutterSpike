@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:murray_mobile_flutter/Account/AccountPage.dart';
-import 'package:murray_mobile_flutter/Parking/BookingPage.dart';
 import 'package:murray_mobile_flutter/CreatePage/CreatePage.dart';
 import 'package:murray_mobile_flutter/HomePage/HomePage.dart';
 import 'package:murray_mobile_flutter/Info/InfoPage.dart';
+import 'package:murray_mobile_flutter/Parking/ParkingPage.dart';
 
 class TabbedNavigationBar extends StatefulWidget{
 
@@ -19,7 +19,7 @@ class _TabbedNavigationState extends State<TabbedNavigationBar>{
     HomePage(),
     CreatePage(),
     InfoPage(),
-    BookingPage(),
+    ParkingPage(),
     AccountPage()
   ];
 
@@ -39,7 +39,7 @@ class _TabbedNavigationState extends State<TabbedNavigationBar>{
             backgroundColor: Colors.transparent,
             shadowColor: Colors.transparent,
             leading: const Icon(Icons.person, color: Colors.grey,size: 50),
-            title: const Text("Good Morning, Joe!", style: TextStyle(color: Colors.grey)),
+            title: const Text("Hello Paul Morley!", style: TextStyle(color: Colors.grey)),
             actions: const [Icon(Icons.car_repair_rounded, color: Colors.grey,size: 50)],
           ),
           body: IndexedStack(

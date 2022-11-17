@@ -1,6 +1,6 @@
 
 import 'package:flutter/material.dart';
-import 'package:murray_mobile_flutter/Parking/CarGridCell.dart';
+import 'package:murray_mobile_flutter/Parking/Booking/CarGridCell.dart';
 
 class CarGrid extends StatelessWidget{
 

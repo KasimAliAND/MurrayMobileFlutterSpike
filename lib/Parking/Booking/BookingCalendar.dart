@@ -11,16 +11,20 @@ class BookingCalendar extends StatelessWidget {
         border: Border.all(width: 0.5)
       ),
       child: Column(
-        children: const [
-          Align(
+        children:[
+          const Align(
             alignment: Alignment.centerLeft,
             child: Padding(
-              child: Text("Pick a day:"),
-              padding: EdgeInsets.only(left: 10,top: 10)
+              padding: EdgeInsets.only(left: 10,top: 10),
+              child: Text("Pick a day:")
             ),
-
           ),
-          Icon(Icons.calendar_month, size: 180)
+          CalendarDatePicker(
+              initialDate: DateTime.now(),
+              firstDate: DateTime.now(),
+              lastDate: DateTime.now().add(const Duration(days: 1)),
+              onDateChanged: (date){},
+          )
         ],
       ),
     );
